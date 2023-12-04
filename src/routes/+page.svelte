@@ -1,18 +1,15 @@
 <script lang="ts">
-  import { lazyLoad } from "lib/lazyload";
   import Learning from "assets/learning.jpg"
 	import MaterialBadges from "components/MaterialBadges.svelte";
+	import JoinNow from "components/JoinNow.svelte";
   
   let loading = true;
 
 </script>
 
 <div class="min-h-screen w-full">
-  <section class="w-full flex flex-col min-h-screen">
-    <div class={`absolute top-0 right-0  bg-gray-500 h-screen w-full ${loading ? 'animate-pulse' : ''}`}>
-      <img use:lazyLoad={Learning} on:load={() => loading = false} alt="person learning" class="w-full opacity-0 brightness-50 grayscale-0 h-full object-cover" />
-    </div>
-    <div class="py-8 px-4 mx-auto z-10 w-full max-w-screen-xl lg:py-32">
+  <section style="background-image: url({Learning});" class={`w-full bg-no-repeat bg-gray-700 bg-blend-multiply bg-cover  flex flex-col min-h-screen`}>
+    <div class="py-20 px-4 mx-auto z-10 w-full max-w-screen-xl lg:py-32">
         <div class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
             <a href="/courses?category=tutorials" class="bg-orange-100 text-orange-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-orange-400 mb-2">
                 <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
@@ -63,8 +60,8 @@
         </div>
     </div>
   </section>
-  <div class="w-full bg-gray-800 dark:bg-gray-800">
+  <div class="w-full from-gray-700 to-gray-900 bg-gradient-to-r">
     <MaterialBadges />
   </div>
-  <div class="w-full"></div>
+  <JoinNow />
 </div>

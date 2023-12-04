@@ -5,20 +5,20 @@
 </script>
 
 
-<div class="absolute z-10 top-0 right-0">
+<div class="absolute z-50 top-0 right-0">
   <div class="w-full flex justify-end p-4">
      <button on:click={() => shown = !shown} class="w-10 h-10" type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
-       <svg class="w-8 text-white h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu</title><path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+       <svg class="w-8 text-orange-500 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu</title><path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
      </button>
   </div>
 
   {#if shown}
     <button in:fly={{ x: -2000 }} out:fly={{ x: -2000 }} class="fixed transition top-0 left-0 z-30 w-full h-full cursor-default bg-black/10" on:click={() => shown = !shown}></button>
     <div in:fly={{ x: -200 }} out:fly={{ x: -200 }} class="fixed top-0 left-0 z-40 w-64 h-screen p-4 overflow-y-auto bg-white dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-navigation-label">
-        <div class="flex gap-5 items-center">
+        <a href="/" class="flex gap-5 items-center">
           <img src={Logo} alt="SnapLrn logo" class="w-8 h-8" />
           <h3 id="drawer-navigation-label" class="text-base font-semibold bg-gradient-to-br from-main-light to-purple-500 bg-clip-text text-transparent box-decoration-clone dark:text-gray-400">SnapLrn</h3>
-        </div>
+        </a>
         <button on:click={() => shown = !shown} type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
             <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             <span class="sr-only">Close menu</span>
