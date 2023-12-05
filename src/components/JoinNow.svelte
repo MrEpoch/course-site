@@ -2,7 +2,7 @@
   import JoinNow from 'assets/join.jpg';
 </script>
 
-<section style="background-image: url({JoinNow});" class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-cover bg-gray-700 bg-blend-overlay">
+<section style="background-image: url({JoinNow});" class="bg-center bg-no-repeat bg-cover bg-gray-700 bg-blend-overlay">
     <div class="px-4 backdrop-brightness-50 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Advance your coding skillset with us</h1>
         <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">We SnapLrn, provide variaty of courses centered around web technologies, ranging from design, css to more complicated usage of JavaScript frameworks.</p>
