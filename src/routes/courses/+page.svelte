@@ -1,10 +1,14 @@
+<script lang="ts">
+	import Courses from './Courses.svelte';
+	import { courses } from './courses';
+</script>
 
 <div class="min-h-screen w-full flex items-center justify-center py-12">
 	<div class="max-w-screen-xl w-full h-full flex justify-center items-center flex-col">
-		<div class="flex items-center justify-center w-full py-4 md:py-8 flex-wrap">
+		<div class="flex items-center justify-center w-full py-8 flex-wrap">
 			<button
 				type="button"
-				class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800"
+				class="text-orange-700 hover:text-white border border-orange-600 bg-white hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-orange-500 dark:text-orange-500 dark:hover:text-white dark:hover:bg-orange-500 dark:bg-gray-900 dark:focus:ring-orange-800"
 				>All Courses</button
 			>
 			<button
@@ -28,92 +32,10 @@
 				>SvelteKit</button
 			>
 		</div>
-		<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-			<div>
-				<img
-					class="h-auto max-w-full rounded-lg"
-					src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
-					alt=""
-				/>
-			</div>
-			<div>
-				<img
-					class="h-auto max-w-full rounded-lg"
-					src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
-					alt=""
-				/>
-			</div>
-			<div>
-				<img
-					class="h-auto max-w-full rounded-lg"
-					src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
-					alt=""
-				/>
-			</div>
-			<div>
-				<img
-					class="h-auto max-w-full rounded-lg"
-					src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-					alt=""
-				/>
-			</div>
-			<div>
-				<img
-					class="h-auto max-w-full rounded-lg"
-					src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
-					alt=""
-				/>
-			</div>
-			<div>
-				<img
-					class="h-auto max-w-full rounded-lg"
-					src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
-					alt=""
-				/>
-			</div>
-			<div>
-				<img
-					class="h-auto max-w-full rounded-lg"
-					src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg"
-					alt=""
-				/>
-			</div>
-			<div>
-				<img
-					class="h-auto max-w-full rounded-lg"
-					src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg"
-					alt=""
-				/>
-			</div>
-			<div>
-				<img
-					class="h-auto max-w-full rounded-lg"
-					src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg"
-					alt=""
-				/>
-			</div>
-			<div>
-				<img
-					class="h-auto max-w-full rounded-lg"
-					src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg"
-					alt=""
-				/>
-			</div>
-			<div>
-				<img
-					class="h-auto max-w-full rounded-lg"
-					src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg"
-					alt=""
-				/>
-			</div>
-			<div>
-				<img
-					class="h-auto max-w-full rounded-lg"
-					src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg"
-					alt=""
-				/>
-			</div>
+		<div class="sm:grid p-6 flex flex-col justify-between grid-cols-2 md:grid-cols-3 gap-4">
+			{#each courses as course}
+				<Courses {course} />
+			{/each}
 		</div>
 	</div>
 </div>
-

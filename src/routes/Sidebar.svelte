@@ -5,6 +5,22 @@
 	let shown = false;
 </script>
 
+{#if !shown}
+	<a
+		href="/"
+		on:click={() => (shown = false)}
+		class="flex gap-5 absolute top-5 left-5 items-center"
+	>
+		<img src={Logo} alt="SnapLrn logo" class="w-8 h-8" />
+		<h3
+			id="drawer-navigation-label"
+			class="text-base font-semibold bg-gradient-to-br from-main-light to-purple-500 bg-clip-text text-transparent box-decoration-clone dark:text-gray-400"
+		>
+			SnapLrn
+		</h3>
+	</a>
+{/if}
+
 <div class="absolute z-50 top-0 right-0">
 	<div class="w-full flex justify-end p-4">
 		<button
@@ -38,7 +54,7 @@
 			tabindex="-1"
 			aria-labelledby="drawer-navigation-label"
 		>
-			<a href="/" on:click={() => shown = false} class="flex gap-5 items-center">
+			<a href="/" on:click={() => (shown = false)} class="flex gap-5 items-center">
 				<img src={Logo} alt="SnapLrn logo" class="w-8 h-8" />
 				<h3
 					id="drawer-navigation-label"
@@ -71,7 +87,8 @@
 			<div class="py-4 overflow-y-auto">
 				<ul class="space-y-2 font-medium">
 					<li>
-						<a  on:click={() => shown = false}
+						<a
+							on:click={() => (shown = false)}
 							href="/dashboard"
 							class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
 						>
@@ -93,7 +110,8 @@
 						</a>
 					</li>
 					<li>
-						<a  on:click={() => shown = false}
+						<a
+							on:click={() => (shown = false)}
 							href="/courses"
 							class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
 						>
@@ -113,7 +131,8 @@
 						</a>
 					</li>
 					<li>
-						<a  on:click={() => shown = false}
+						<a
+							on:click={() => (shown = false)}
 							href="/signin"
 							class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
 						>
@@ -136,7 +155,8 @@
 						</a>
 					</li>
 					<li>
-						<a  on:click={() => shown = false}
+						<a
+							on:click={() => (shown = false)}
 							href="/signup"
 							class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
 						>

@@ -1,5 +1,3 @@
-
-
 <script lang="ts">
 	import Learning from 'assets/learning.jpg';
 	import MaterialBadges from 'components/MaterialBadges.svelte';
@@ -171,4 +169,3 @@
 	</div>
 	<JoinNow />
 </div>
-
