@@ -7,7 +7,15 @@ export const courses = [
 	{
 		id: 1,
 		name: 'Introduction to HTML',
-		description: 'Learn the basics of HTML',
+		description: 'Unlock the power of web development with our introductory course, "HTML Fundamentals: Building the Web Foundation." HTML (Hypertext Markup Language) is the backbone of every webpage, and understanding its core principles is essential for anyone aspiring to create, design, or maintain websites.',
+    goodPoints: [
+      'Introduction to HTML',
+      'HTML Fundamentals: document structure',
+      'HTML Tags and Elements',
+      'Attributes and Images',
+      'Hyperlinks and Navigation',
+      'Forms and Input Elements'
+    ],
 		tag: 'HTML',
 		url: '/intro-to-html',
 		image: Html

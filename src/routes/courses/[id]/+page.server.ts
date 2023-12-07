@@ -5,7 +5,7 @@ export const load = async ({ params }: { params: { id: string } }) => {
   const course = courses.filter(a => a.url === ("/" + String(params.id)))
   if (course.length === 1) {
 		return {
-			course 
+      course: course[0]
 		};
 	} else throw redirect(302, '/courses');
 };

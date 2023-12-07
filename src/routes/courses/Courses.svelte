@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { lazyLoad } from 'lib/lazyload';
-	import { scale } from 'svelte/transition';
 
 	export let course: any;
 	let loaded = false;
@@ -8,15 +7,15 @@
 
 <a
 	href={'/courses' + course.url}
-	class="min-w-64 min-h-48 relative hover:brightness-75 transition duration-300"
+	class="relative hover:brightness-75 transition duration-300"
 >
 	<div
-		class={`rounded-lg object-cover bg-gray-50 min-h-64 w-84 ${
+		class={`overflow-hidden rounded-lg object-cover bg-gray-50 h-64 w-80 ${
 			loaded ? '' : 'animate-pulse'
 		} dark:bg-darkmode-400`}
 	>
 		<img
-			class="opacity-0 max-w-full rounded-lg object-cover h-full"
+			class="opacity-0 hover:scale-110 transition duration-300 max-w-full rounded-lg object-cover h-full"
 			use:lazyLoad={course.image}
 			on:load={() => (loaded = true)}
 			alt={course.name}
