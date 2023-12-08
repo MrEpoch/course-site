@@ -23,7 +23,15 @@ export const courses = [
 	{
 		id: 2,
 		name: 'Basics of CSS',
-		description: 'CSS foundation for web development',
+		description: 'Step into the captivating world of web design with our course, "CSS Essentials: Styling the Web with Confidence." Cascading Style Sheets (CSS) play a crucial role in transforming plain HTML content into visually stunning and user-friendly websites. This course is tailored for beginners eager to unlock the magic of CSS and enhance their ability to create aesthetically pleasing web pages.',
+    goodPoints: [
+      'Introduction to CSS',
+      'CSS fundamentals',
+      'CSS selectors',
+      'CSS properties',
+      'CSS positioning',
+      'CSS layout'
+    ],
 		tag: 'CSS',
 		url: '/basics-of-css',
 		image: Css
@@ -31,7 +39,15 @@ export const courses = [
 	{
 		id: 3,
 		name: 'Basics of React',
-		description: 'React foundation for web development',
+		description: 'Embark on a transformative journey into the heart of modern web development with our course, "React Fundamentals: Building Dynamic Web Interfaces." React.js has emerged as a powerful library for crafting interactive and efficient user interfaces, and this course is designed to introduce beginners to its core concepts and principles.',
+    goodPoints: [
+      'Introduction to React',
+      'React fundamentals',
+      'React components',
+      'React state',
+      'React props',
+      'React lifecycle methods'
+    ],
 		tag: 'React',
 		url: '/basics-of-react',
 		image: React
@@ -39,7 +55,15 @@ export const courses = [
 	{
 		id: 4,
 		name: 'Basics of Svelte',
-		description: 'Svelte foundation for web development',
+		description: 'Discover the revolutionary world of web development with our course, "Svelte Essentials: Building Web Apps with Effortless Efficiency." Svelte, a cutting-edge JavaScript framework, takes a unique approach by shifting much of the work to build time, resulting in smaller and faster web applications. This course is tailored for beginners eager to explore the fundamentals of Svelte and unlock the power of building reactive and efficient user interfaces.',
+    goodPoints: [
+      'Introduction to Svelte',
+      'Svelte fundamentals',
+      'Svelte components',
+      'Svelte state',
+      'Svelte props',
+      'Svelte lifecycle methods'
+    ],
 		tag: 'Svelte',
 		url: '/basics-of-svelte',
 		image: Svelte
