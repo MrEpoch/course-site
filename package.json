@@ -32,6 +32,15 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"svelte-local-storage-store": "^0.6.4"
+		"@prisma/client": "^5.7.1",
+		"@sanity/client": "^6.10.0",
+		"@sanity/image-url": "^1.0.2",
+		"@supabase/auth-helpers-sveltekit": "^0.10.2",
+		"@supabase/auth-ui-shared": "^0.1.6",
+		"@supabase/auth-ui-svelte": "^0.2.4",
+		"@supabase/supabase-js": "^2.33.1",
+		"prisma": "^5.2.0",
+		"svelte-local-storage-store": "^0.6.4",
+		"zod": "^3.22.2"
 	}
 }

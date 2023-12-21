@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Courses from './Courses.svelte';
-	import { courses } from './courses';
+  export let data;
 </script>
 
 <div class="min-h-screen w-full flex items-center justify-center py-12">
@@ -33,7 +33,7 @@
 			>
 		</div>
 		<div class="sm:grid p-6 flex flex-col justify-between grid-cols-2 md:grid-cols-3 gap-4">
-			{#each courses as course}
+      {#each data.courses as course}
 				<Courses {course} />
 			{/each}
 		</div>
