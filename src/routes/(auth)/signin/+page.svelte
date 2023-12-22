@@ -21,7 +21,7 @@
 					>
 						Sign in to your account
 					</h1>
-					<form class="space-y-4 md:space-y-6" action="#">
+					<form class="space-y-4 md:space-y-6" method="POST">
 						<div>
 							<label
 								for="email"

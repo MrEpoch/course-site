@@ -40,7 +40,7 @@
 					showcasing this basic skill and many more.
 				</p>
 				<a
-					href="/courses/basic-html-css"
+					href="/courses"
 					class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900"
 				>
 					Read more

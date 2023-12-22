@@ -1,10 +1,10 @@
 import {createClient} from "@sanity/client";
 import imageUrlBuilder  from "@sanity/image-url";
-import { PUBLIC_projectId, PUBLIC_dataset } from "$env/static/public";
+import { PUBLIC_PROJECT_ID, PUBLIC_DATASET } from "$env/static/public";
 
 export const client = createClient({
-  projectId: PUBLIC_projectId,
-  dataset: PUBLIC_dataset,
+  projectId: PUBLIC_PROJECT_ID,
+  dataset: PUBLIC_DATASET,
   apiVersion: "2023-12-20",
   useCdn: false
 });

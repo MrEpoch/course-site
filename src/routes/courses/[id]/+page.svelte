@@ -13,6 +13,11 @@
         <h1 class="text-4xl font-bold">{course.title}</h1>
         <p class="text-md text-gray-700 dark:text-gray-300 font-light">{course.description}</p>
         <ul class="flex flex-col py-8 lg:py-0 lg:items-start items-center w-full gap-4">
+          {#each course.points as point}
+            <li class="flex gap-4">
+              {point}
+            </li>
+          {/each}
         </ul>
         <button class="text-white bg-orange-600 hover:bg-orange-700 font-medium rounded-lg text-md px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 transition">View course</button>
       </div>  
