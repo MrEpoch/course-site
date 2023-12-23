@@ -39,6 +39,7 @@
 		"@supabase/auth-ui-shared": "^0.1.6",
 		"@supabase/auth-ui-svelte": "^0.2.4",
 		"@supabase/supabase-js": "^2.33.1",
+		"crypto-js": "^4.2.0",
 		"prisma": "^5.2.0",
 		"svelte-local-storage-store": "^0.6.4",
 		"zod": "^3.22.2"
