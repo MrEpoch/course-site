@@ -1,5 +1,6 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 import { redirect } from '@sveltejs/kit';
+import { prisma } from 'lib/db';
 
 export const GET = async ({
 	url,
@@ -13,6 +14,17 @@ export const GET = async ({
 	if (code) {
 		await supabase.auth.exchangeCodeForSession(code);
 	}
+
+  const session = await supabase.auth.getSession();
+
+  if (!session.data.session) {
+    throw redirect(303, '/signin');
+  }
+  await prisma.user.create({
+    data: {
+      supabaseUserId: session.data.session?.user.id,
+    }
+  })
 
 	throw redirect(303, '/dashboard/account');
 };

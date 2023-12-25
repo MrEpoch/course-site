@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Courses from './Courses.svelte';
+	import Courses from 'components/Courses.svelte';
   export let data;
 </script>
 
