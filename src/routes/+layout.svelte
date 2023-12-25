@@ -31,7 +31,7 @@
 </svelte:head>
 
 <div class:dark>
-	<Sidebar />
+  <Sidebar session={data.session} />
 	<Transition url={data.url}>
 		<slot />
 	</Transition>

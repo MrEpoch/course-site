@@ -2,7 +2,14 @@
   import { urlFor } from "lib/sanity";
   export let data;
   $: course = data.course;
+
+  export let form;
+  const session = data.session;
 </script>
+
+{#if form?.error}
+  <h1 class="text-xl  text-red-500 font-bold leading-tight tracking-tight  md:text-2xl ">{form?.error}</h1>
+{/if}
 
 
 {#if course}
@@ -19,7 +26,16 @@
             </li>
           {/each}
         </ul>
-        <button class="text-white bg-orange-600 hover:bg-orange-700 font-medium rounded-lg text-md px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 transition">View course</button>
+        {#if session}
+          <form class="w-full" method="POST">
+            <button class="text-white bg-orange-600 hover:bg-orange-700 font-medium rounded-lg text-md px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 transition">Enroll now</button>
+            <input type="hidden" name="courseId" value={course._id} />
+          </form>
+        {:else}
+          <div>
+            <button class="text-white bg-orange-600 hover:bg-orange-700 font-medium rounded-lg text-md px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 transition">View course</button>
+          </div>
+        {/if}
       </div>  
       <div class="w-full object-cover h-full">
         <img src={urlFor(course.image)} alt={course.title} />
