@@ -23,7 +23,7 @@
 		/>
 	</div>
 	<h5
-		class={`text-lg font-bold tracking-tight whitespace-nowrap text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
+		class={`lg:text-2xl sm:text-xl text-lg font-bold tracking-tight whitespace-nowrap text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
 			loaded ? '' : 'hidden'
 		}`}
 	>

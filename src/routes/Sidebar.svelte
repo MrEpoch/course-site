@@ -12,7 +12,7 @@
 	<a
 		href="/"
 		on:click={() => (shown = false)}
-		class="flex gap-5 absolute top-5 left-5 items-center"
+		class="flex z-10 gap-5 absolute top-5 left-5 items-center"
 	>
 		<img src={Logo} alt="SnapLrn logo" class="w-8 h-8" />
 		<h3
