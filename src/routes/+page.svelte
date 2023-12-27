@@ -164,8 +164,5 @@
 			</div>
 		</div>
 	</section>
-	<div class="w-full dark:bg-darkmode-400">
-		<MaterialBadges />
-	</div>
 	<JoinNow />
 </div>

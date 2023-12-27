@@ -13,7 +13,7 @@
 </script>
 
 <div class="min-h-screen w-full flex items-center justify-center py-12">
-	<div class="max-w-screen-xl w-full h-screen flex items-center flex-col">
+	<div class="max-w-screen-xl h-full py-8 w-full flex items-center flex-col">
 		<div class="flex items-center justify-center w-full py-8 flex-wrap">
 			<a 
 				href="/courses?category=all"
