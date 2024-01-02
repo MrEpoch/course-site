@@ -1,15 +1,12 @@
 <script lang="ts">
 	import Learning from 'assets/learning.jpg';
-	import MaterialBadges from 'components/MaterialBadges.svelte';
 	import JoinNow from 'components/JoinNow.svelte';
-
-	let loading = true;
 </script>
 
 <div class="min-h-screen w-full">
 	<section
 		style="background-image: url({Learning});"
-		class={`w-full bg-no-repeat bg-gray-700 bg-blend-multiply bg-cover  flex flex-col min-h-screen`}
+		class={`w-full bg-no-repeat bg-gray-700 bg-blend-multiply bg-cover  flex flex-col min-h-screen bg-fixed`}
 	>
 		<div class="py-20 px-4 mx-auto z-10 w-full max-w-screen-xl lg:py-32">
 			<div

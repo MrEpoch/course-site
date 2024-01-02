@@ -4,7 +4,7 @@
 
 <section
 	style="background-image: url({JoinNow});"
-	class="bg-center bg-no-repeat bg-cover bg-gray-700 bg-blend-overlay"
+	class="bg-fixed bg-center bg-no-repeat bg-cover bg-gray-700 bg-blend-overlay"
 >
 	<div class="px-4 backdrop-brightness-50 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
 		<h1
