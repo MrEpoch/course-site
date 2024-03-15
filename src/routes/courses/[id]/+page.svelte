@@ -33,12 +33,12 @@
         </ul>
         {#if session}
           <form class="w-full" method="POST">
-            <button class="text-white bg-orange-600 hover:bg-orange-700 font-medium rounded-lg text-md px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 transition">Enroll now</button>
+            <button class="text-white bg-orange-600 hover:bg-orange-700 font-medium rounded text-md px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 transition">Enroll now</button>
             <input type="hidden" name="courseId" value={course._id} />
           </form>
         {:else}
           <div class="w-full flex justify-center">
-            <button class="text-white bg-orange-600 hover:bg-orange-700 font-medium rounded-lg text-md px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 transition">View course</button>
+            <button class="text-white bg-orange-600 hover:bg-orange-700 font-medium rounded text-md px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 transition">View course</button>
           </div>
         {/if}
       </div>  

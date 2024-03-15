@@ -13,7 +13,7 @@
 				SnapLrn
 			</a>
 			<div
-				class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-darkmode-400 dark:border-gray-700"
+				class="w-full bg-white rounded shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-darkmode-400 dark:border-gray-700"
 			>
 				<div class="p-6 space-y-4 md:space-y-6 sm:p-8">
 					<h1
@@ -32,7 +32,7 @@
 								type="email"
 								name="email"
 								id="email"
-								class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+								class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 								placeholder="name@company.com"
 								required=""
 							/>
@@ -47,13 +47,13 @@
 								name="password"
 								id="password"
 								placeholder="••••••••"
-								class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+								class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 								required=""
 							/>
 						</div>
 						<button
 							type="submit"
-							class="w-full text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800"
+							class="w-full text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded text-sm px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800"
 							>Sign in</button
 						>
 						<p class="text-sm font-light text-gray-500 dark:text-gray-400">

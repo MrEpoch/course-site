@@ -1,6 +1,9 @@
 <script lang="ts">
 	import Learning from 'assets/learning.jpg';
 	import JoinNow from 'components/JoinNow.svelte';
+  import VideoSection from "components/VideoSection.svelte";
+  import Video from "assets/video.mp4";
+  import Thumb from "assets/learning.jpg";
 </script>
 
 <div class="min-h-screen w-full">
@@ -10,11 +13,11 @@
 	>
 		<div class="py-20 px-4 mx-auto z-10 w-full max-w-screen-xl lg:py-32">
 			<div
-				class="bg-gray-50 dark:bg-darkmode-400 border border-darkmode-200 dark:border-darkmode-300 rounded-lg p-8 md:p-12 mb-8"
+				class="bg-gray-50 dark:bg-darkmode-400 border border-darkmode-200 dark:border-darkmode-300 rounded p-8 md:p-12 mb-8"
 			>
 				<a
 					href="/courses?category=tutorials"
-					class="bg-orange-100 text-orange-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-orange-400 mb-2"
+					class="bg-orange-100 text-orange-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-orange-400 mb-2"
 				>
 					<svg
 						class="w-2.5 h-2.5 me-1.5"
@@ -38,7 +41,7 @@
 				</p>
 				<a
 					href="/courses"
-					class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900"
+					class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900"
 				>
 					Read more
 					<svg
@@ -60,11 +63,11 @@
 			</div>
 			<div class="grid md:grid-cols-2 gap-8">
 				<div
-					class="bg-gray-50 dark:bg-darkmode-400 border border-darkmode-200 dark:border-darkmode-300 rounded-lg p-8 md:p-12"
+					class="bg-gray-50 dark:bg-darkmode-400 border border-darkmode-200 dark:border-darkmode-300 rounded p-8 md:p-12"
 				>
 					<a
 						href="/courses?category=design"
-						class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2"
+						class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 mb-2"
 					>
 						<svg
 							class="w-2.5 h-2.5 me-1.5"
@@ -108,11 +111,11 @@
 					</a>
 				</div>
 				<div
-					class="bg-gray-50 dark:bg-darkmode-400 border border-darkmode-200 dark:border-darkmode-300 rounded-lg p-8 md:p-12"
+					class="bg-gray-50 dark:bg-darkmode-400 border border-darkmode-200 dark:border-darkmode-300 rounded p-8 md:p-12"
 				>
 					<a
 						href="/courses?category=code"
-						class="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2"
+						class="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 mb-2"
 					>
 						<svg
 							class="w-2.5 h-2.5 me-1.5"
@@ -161,5 +164,6 @@
 			</div>
 		</div>
 	</section>
+  <VideoSection thumb={Thumb} thumbWidth={1024} thumbHeight={1024} video={Video} videoWidth={1024} videoHeight={1024} />
 	<JoinNow />
 </div>

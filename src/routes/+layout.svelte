@@ -2,7 +2,6 @@
 	import '../app.css';
 	import Footer from './Footer.svelte';
 	import Sidebar from './Sidebar.svelte';
-	import { theme } from '$lib/store';
 	import Transition from 'components/Transition.svelte';
 	import { invalidate } from '$app/navigation'
 	import { onMount } from 'svelte'
@@ -21,16 +20,14 @@
 
 		return () => data.subscription.unsubscribe()
 	})
-
-	$: dark = $theme === 'dark';
 </script>
 
 <svelte:head>
 	<title>SnapLrn</title>
-	<meta name="color-scheme" content={dark ? 'dark' : 'light'} />
+	<meta name="color-scheme" content={"dark"} />
 </svelte:head>
 
-<div class:dark>
+<div class="dark">
   <Sidebar session={data.session} />
 	<Transition url={data.url}>
 		<slot />

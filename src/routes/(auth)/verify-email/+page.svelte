@@ -11,8 +11,8 @@
       We've sent you an email with a link to verify your email. If you didn't receive it, please sign up again. 
     </p>
     <div class="flex gap-4">
-      <a href="/signup" class="transition bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-lg">Sign Up</a>
-      <a href="/signin" class="transition bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-lg">Sign In</a>
+      <a href="/signup" class="transition bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded">Sign Up</a>
+      <a href="/signin" class="transition bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded">Sign In</a>
     </div>
   </div>
 </div>

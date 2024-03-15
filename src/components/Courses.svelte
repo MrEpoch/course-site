@@ -11,12 +11,12 @@
 	class="relative hover:brightness-75 transition duration-300"
 >
 	<div
-		class={`overflow-hidden rounded-lg object-cover bg-gray-50 h-64 w-80 ${
+		class={`overflow-hidden rounded object-cover bg-gray-50 h-64 w-80 ${
 			loaded ? '' : 'animate-pulse'
 		} dark:bg-darkmode-400`}
 	>
 		<img
-			class="opacity-0 hover:scale-110 transition duration-300 max-w-full rounded-lg object-cover h-full"
+			class="opacity-0 hover:scale-110 transition duration-300 max-w-full rounded object-cover h-full"
 			use:lazyLoad={urlFor(course.image)}
 			on:load={() => (loaded = true)}
 			alt={course.name}

@@ -1,9 +1,4 @@
-<script lang="ts">
-	import JoinNow from 'assets/join.jpg';
-</script>
-
 <section
-	style="background-image: url({JoinNow});"
 	class="bg-fixed bg-center bg-no-repeat bg-cover bg-gray-700 bg-blend-overlay"
 >
 	<div class="px-4 backdrop-brightness-50 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
@@ -19,7 +14,7 @@
 		<div class=" flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
 			<a
 				href="/signup"
-				class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900"
+				class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900"
 			>
 				Join Now
 				<svg

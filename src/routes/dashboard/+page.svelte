@@ -25,8 +25,8 @@
       <h1 class="md:text-4xl sm:text-3xl text-2xl text-center font-extrabold sm:font-bold">Connect with us at SnapLrn</h1>
       <img src={connect} alt="connecting two cables" class="hover:animate-spin duration-1000 transition cursor-pointer sm:w-1/5 dark:invert w-32 h-auto" />
       <div class="w-full flex justify-around items-center">
-        <a href="/signup" class="px-6 py-3 bg-orange-600 rounded-lg text-gray-100 font-bold hover:bg-orange-700 transition">Join now</a>
-        <a href="/courses?category=all" class="px-6 py-3 bg-orange-600 rounded-lg text-gray-100 font-bold hover:bg-orange-700 transition">See courses</a>
+        <a href="/signup" class="px-6 py-3 bg-orange-600 rounded text-gray-100 font-bold hover:bg-orange-700 transition">Join now</a>
+        <a href="/courses?category=all" class="px-6 py-3 bg-orange-600 rounded text-gray-100 font-bold hover:bg-orange-700 transition">See courses</a>
       </div>
     </div>
 </div>
