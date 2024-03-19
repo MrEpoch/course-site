@@ -16,7 +16,6 @@ export const actions: Actions = {
 			const data = await request.formData();
 			const zodEmail = z.string().email();
 			const zodPassword = z.string().min(8);
-      
 
 			const email = zodEmail.safeParse(data.get('email'));
 			const password = zodPassword.safeParse(data.get('password'));
@@ -26,15 +25,15 @@ export const actions: Actions = {
 			}
 
 			const { error } = await supabase.auth.signUp({
-        email: email.data,
-        password: password.data,
+				email: email.data,
+				password: password.data,
 				options: {
 					emailRedirectTo: `${url.origin}/auth/callback`
 				}
 			});
 
 			if (error) {
-        console.log(error);
+				console.log(error);
 				return fail(400, { message: 'Error logging in', error: true });
 			}
 		} catch (error) {

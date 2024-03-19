@@ -1,10 +1,10 @@
 <script lang="ts">
 	import Learning from 'assets/learning.jpg';
 	import JoinNow from 'components/JoinNow.svelte';
-  import VideoSection from "components/VideoSection.svelte";
-  import Video from "assets/video.mp4";
-  import Thumb from "assets/learning.jpg";
-  import ContactSection from "components/ContactSection.svelte";
+	import VideoSection from 'components/VideoSection.svelte';
+	import Video from 'assets/video.mp4';
+	import Thumb from 'assets/learning.jpg';
+	import ContactSection from 'components/ContactSection.svelte';
 </script>
 
 <div class="min-h-screen w-full">
@@ -165,7 +165,14 @@
 			</div>
 		</div>
 	</section>
-  <VideoSection thumb={Thumb} thumbWidth={1024} thumbHeight={1024} video={Video} videoWidth={1024} videoHeight={1024} />
+	<VideoSection
+		thumb={Thumb}
+		thumbWidth={1024}
+		thumbHeight={1024}
+		video={Video}
+		videoWidth={1024}
+		videoHeight={1024}
+	/>
 	<JoinNow />
-  <ContactSection />
+	<ContactSection />
 </div>

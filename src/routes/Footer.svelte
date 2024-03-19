@@ -1,6 +1,5 @@
 <script>
 	import Logo from 'assets/Logo-Course.png';
-  import { theme } from "$lib/store";
 </script>
 
 <footer class="shadow dark:bg-darkmode-500 text-black dark:text-white">

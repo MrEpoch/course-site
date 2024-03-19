@@ -1,12 +1,11 @@
 <script lang="ts">
 	import Logo from 'assets/Logo-Course.png';
 
-  export let form;
-
+	export let form;
 </script>
 
 {#if form?.error}
-  <h1 class="text-xl  text-red-500 font-bold leading-tight tracking-tight  md:text-2xl ">TF</h1>
+	<h1 class="text-xl text-red-500 font-bold leading-tight tracking-tight md:text-2xl">TF</h1>
 {/if}
 
 <div class="min-h-screen w-full">
@@ -28,7 +27,7 @@
 					>
 						Create and account
 					</h1>
-					<form method="POST" class="space-y-4 md:space-y-6" >
+					<form method="POST" class="space-y-4 md:space-y-6">
 						<div>
 							<label
 								for="email"

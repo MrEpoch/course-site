@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { lazyLoad } from 'lib/lazyload';
-  import { urlFor } from 'lib/sanity';
+	import { urlFor } from 'lib/sanity';
 
 	export let course: any;
 	let loaded = false;
 </script>
 
 <a
-	href={'/courses' + "/" + course.slug.current}
+	href={'/courses' + '/' + course.slug.current}
 	class="relative hover:brightness-75 transition duration-300"
 >
 	<div

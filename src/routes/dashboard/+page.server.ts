@@ -1,8 +1,8 @@
-import { redirect } from "@sveltejs/kit";
+import { redirect } from '@sveltejs/kit';
 
 export const load = async ({ locals: { getSession } }) => {
-  const session = await getSession();
-  if (session) {
-    throw redirect(303, '/dashboard/account');
-  }
-}
+	const session = await getSession();
+	if (session) {
+		throw redirect(303, '/dashboard/account');
+	}
+};

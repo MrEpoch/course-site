@@ -1,4 +1,5 @@
 import type { Session, SupabaseClient } from '@supabase/supabase-js';
+import { redirect } from '@sveltejs/kit';
 
 export async function GET({
 	locals: { getSession, supabase }
@@ -7,18 +8,8 @@ export async function GET({
 }) {
 	const session = await getSession();
 	if (!session) {
-		return new Response(null, {
-			status: 302,
-			headers: {
-				Location: '/'
-			}
-		});
+    throw redirect(303, '/signin');
 	}
 	await supabase.auth.signOut();
-	return new Response(null, {
-		status: 302,
-		headers: {
-			Location: '/'
-		}
-	});
+  throw redirect(303, '/');
 }
