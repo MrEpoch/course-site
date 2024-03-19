@@ -4,6 +4,7 @@
   import VideoSection from "components/VideoSection.svelte";
   import Video from "assets/video.mp4";
   import Thumb from "assets/learning.jpg";
+  import ContactSection from "components/ContactSection.svelte";
 </script>
 
 <div class="min-h-screen w-full">
@@ -166,4 +167,5 @@
 	</section>
   <VideoSection thumb={Thumb} thumbWidth={1024} thumbHeight={1024} video={Video} videoWidth={1024} videoHeight={1024} />
 	<JoinNow />
+  <ContactSection />
 </div>
