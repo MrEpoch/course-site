@@ -4,6 +4,10 @@
       "source": "/(.*)",
       "headers": [
         {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self' 'https://fn5jb19q.api.sanity.io/*'; img-src 'self' 'https://cdn.sanity.io/images/fn5jb19q/production/*'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';"
+        },
+        {
           "key": "Strict-Transport-Security",
           "value": "max-age=31536000; includeSubDomains; preload;"
         },
@@ -25,7 +29,7 @@
         },
         {
           "key": "Cross-Origin-Resource-Policy",
-          "value": "same-origin"
+          "value": "cross-origin"
         },
         {
           "key": "Referrer-Policy",
