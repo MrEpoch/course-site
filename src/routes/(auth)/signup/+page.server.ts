@@ -11,7 +11,7 @@ export const load = async ({ url, locals: { getSession } }) => {
 };
 
 export const actions: Actions = {
-	default: async ({ request, locals: { supabase }, url }) => {
+	normal: async ({ request, locals: { supabase }, url }) => {
 		try {
 			const data = await request.formData();
 			const zodEmail = z.string().email();
@@ -28,7 +28,7 @@ export const actions: Actions = {
 				email: email.data,
 				password: password.data,
 				options: {
-					emailRedirectTo: `${url.origin}/auth/callback`
+					emailRedirectTo: `${url.origin}/auth/normal/callback`
 				}
 			});
 
@@ -42,5 +42,19 @@ export const actions: Actions = {
 		}
 
 		throw redirect(303, '/verify-email');
-	}
+	},
+  github: async ({ request, locals: { supabase }, url }) => {
+    const { data, error } = await supabase.auth.signInWithOAuth({
+      provider: 'github',
+      options: {
+        redirectTo: `${url.origin}/auth/callback`
+      }
+    })
+
+    if (error) {
+      console.log(error);
+      return fail(400, { message: 'Error logging in', error: true });
+    }
+    return { githubUrl: data.url }
+  }
 };

@@ -23,12 +23,21 @@ export const GET = async ({
 
 	if (!session.data.session) {
 		throw redirect(303, '/signin');
-	}
-	await prisma.user.create({
-		data: {
-			supabaseUserId: session.data.session?.user.id
-		}
-	});
+  }
+
+  const user = await prisma.user.findUnique({
+    where: {
+      supabaseUserId: session.data.session?.user.id
+    }
+  })
+
+  if (!user) {
+    await prisma.user.create({
+      data: {
+        supabaseUserId: session.data.session?.user.id
+      }
+    });
+  }
 
 	throw redirect(303, '/dashboard/account');
-};
+}

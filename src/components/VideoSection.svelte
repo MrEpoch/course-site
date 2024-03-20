@@ -16,7 +16,7 @@
 		class="max-w-screen-xl flex-1 flex lg:flex-row flex-col gap-5 justify-center lg:justify-between w-full mx-auto p-8"
 	>
 		<div class="w-full h-full flex flex-col gap-3 justify-center items-center">
-			<h3 class="text-3xl font-bold">Watch the introduction</h3>
+			<h3 class="text-center text-3xl font-bold">Watch the introduction</h3>
 			<p class="text-lg max-w-3xl font-light text-center text-gray-500">
 				Short introduction about usage of SnapLrn, showcases all important features and technologies
 				you can as user user
