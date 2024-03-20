@@ -10,16 +10,12 @@ export const GET = async ({
 	locals: { supabase: SupabaseClient };
 }) => {
 	const code = url.searchParams.get('code');
-  console.log(code);
 
 	if (code) {
-    console.log("bef");
 		await supabase.auth.exchangeCodeForSession(code);
-    console.log("af");
 	}
 
 	const session = await supabase.auth.getSession();
-  console.log(session);
 
 	if (!session.data.session) {
 		throw redirect(303, '/signin');

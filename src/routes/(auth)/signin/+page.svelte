@@ -22,14 +22,11 @@
   {/if}
     <div class="max-w-screen-xl m-0 sm:m-10 bg-darkmode-400 shadow sm:rounded-lg flex justify-center flex-1">
         <div class="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
-            <div>
-              <img src={Logo} alt="logo" width="50" height="50" class="w-mx-auto" />
-            </div>
             <div class="mt-12 flex flex-col items-center">
                 <div class="w-full flex-1 mt-8">
                     <form method="POST" action="?/github" class="flex flex-col items-center">
                         <button
-                            class="w-full hover:bg-orange-300 max-w-xs font-bold shadow-sm rounded-lg py-3 bg-orange-100 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
+                            class="w-full hover:bg-orange-500 hover:text-white max-w-xs font-bold shadow-sm rounded-lg py-3 bg-gray-50 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
                             <div class="bg-white p-2 rounded-full">
                               <img src={Github} alt="github" width="20" height="20" />
                             </div>
@@ -52,7 +49,7 @@
                           class="w-full px-8 py-4 rounded-lg font-medium bg-darkmode-500 border border-darkmode-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-darkmode-400 mt-5"
                             type="password" name="password" placeholder="Password" />
                         <button
-                            class="flex gap-3 mt-5 tracking-wide font-semibold bg-orange-400 text-white-500 w-full py-4 rounded-lg hover:bg-orange-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
+                            class="flex gap-3 mt-5 tracking-wide font-semibold bg-orange-600 text-white-500 w-full py-4 rounded-lg hover:bg-orange-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
                             <svg class="w-6 h-6 -ml-2" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />

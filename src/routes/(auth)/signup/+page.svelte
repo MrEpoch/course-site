@@ -24,9 +24,6 @@
   {/if}
     <div class="max-w-screen-xl m-0 sm:m-10 bg-darkmode-400 shadow sm:rounded-lg flex justify-center flex-1">
         <div class="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
-            <div>
-              <img src={Logo} alt="logo" width="50" height="50" class="w-mx-auto" />
-            </div>
             <div class="mt-12 flex flex-col items-center">
                 <div class="w-full flex-1 mt-8">
                     <form method="POST" action="?/github" class="flex flex-col items-center">
@@ -57,14 +54,14 @@
                           class="w-full px-8 py-4 rounded-lg font-medium bg-darkmode-500 border border-darkmode-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-darkmode-400 mt-5"
                             type="password" name="password-confirm" placeholder="Confirm Password" />
                         <button
-                            class="flex gap-3 mt-5 tracking-wide font-semibold bg-orange-400 text-white-500 w-full py-4 rounded-lg hover:bg-orange-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
+                            class="flex gap-3 mt-5 tracking-wide font-semibold bg-orange-600 text-white-500 w-full py-4 rounded-lg hover:bg-orange-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
                             <svg class="w-6 h-6 -ml-2" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
                                 <circle cx="8.5" cy="7" r="4" />
                                 <path d="M20 8v6M23 11h-6" />
                             </svg>
-                            <span class="ml-">
+                            <span class="">
                                 Create Account
                             </span>
                         </button>

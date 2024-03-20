@@ -1,31 +1,16 @@
 <script lang="ts">
-	import { lazyLoad } from 'lib/lazyload';
 	import { urlFor } from 'lib/sanity';
 
 	export let course: any;
-	let loaded = false;
 </script>
 
 <a
 	href={'/courses' + '/' + course.slug.current}
-	class="relative hover:brightness-75 transition duration-300"
+	class="hover:brightness-75 bg-darkmode-400 transition duration-300 min-w-48 min-h-48 lg:min-w-64 lg:min-h-64 w-full h-full bg-cover bg-center rounded-lg flex justify-center items-center"
+  style="background-image: url({urlFor(course.image).width(300).height(300).url()});"
 >
-	<div
-		class={`overflow-hidden rounded object-cover bg-gray-50 h-64 w-80 ${
-			loaded ? '' : 'animate-pulse'
-		} dark:bg-darkmode-400`}
-	>
-		<img
-			class="opacity-0 hover:scale-110 transition duration-300 max-w-full rounded object-cover h-full"
-			use:lazyLoad={urlFor(course.image)}
-			on:load={() => (loaded = true)}
-			alt={course.name}
-		/>
-	</div>
 	<h5
-		class={`lg:text-2xl sm:text-xl text-lg font-bold tracking-tight whitespace-nowrap text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
-			loaded ? '' : 'hidden'
-		}`}
+    class={`lg:text-2xl sm:text-xl text-lg font-bold tracking-tight whitespace-nowrap text-white`}
 	>
 		{course.title}
 	</h5>

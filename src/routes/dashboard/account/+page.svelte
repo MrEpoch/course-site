@@ -15,7 +15,7 @@
 		<h3 class="md:text-4xl text-2xl sm:text-3xl flex justify-center md:justify-start font-bold">
 			Welcome, {username}
 		</h3>
-		<div class="w-full flex gap-6 py-16 flex-wrap">
+		<div class="w-full py-8 grid xl:grid-cols-4 gap-6 md:grid-cols-3 max-[480px]:grid-cols-1 grid-cols-2">
 			{#each courses as course}
 				<Courses {course} />
 			{/each}

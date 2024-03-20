@@ -9,8 +9,6 @@ export const load = async ({ locals: { getSession } }) => {
 		throw redirect(303, '/signin');
 	}
 
-  console.log(session);
-
 	const prismaUser = await prisma.user.findUnique({
 		where: {
 			supabaseUserId: session.user.id
