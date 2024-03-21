@@ -19,7 +19,8 @@
 			class="flex lg:py-4 py-12 lg:flex-row gap-8 items-center min-h-screen flex-col max-w-screen-xl mx-auto p-4"
 		>
 			<div class="w-full flex flex-col gap-4 h-full">
-				<p class="text-xl text-orange-300 dark:text-orange-600 font-bold">Course details</p>
+				<h3 class="sm:text-2xl text-xl text-orange-300 dark:text-orange-600 font-bold">Course details</h3>
+        <hr class="w-full border border-gray-600 sm:mx-auto" />
 				<h1 class="text-4xl font-bold">{course.title}</h1>
 				<p class="text-md text-gray-700 dark:text-gray-300 font-light">{course.description}</p>
 				<ul class="py-8 space-y-4 text-left">
