@@ -5,16 +5,19 @@
 	import Video from 'assets/video.mp4';
 	import Thumb from 'assets/learning.jpg';
 	import ContactSection from 'components/ContactSection.svelte';
+  import MovingContainer from 'components/ui/MovingBorder/MovingContainer.svelte';
 </script>
 
 <div class="min-h-screen w-full">
 	<section
 		style="background-image: url({Learning});"
-		class={`w-full bg-no-repeat bg-gray-700 bg-blend-multiply bg-cover  flex flex-col min-h-screen bg-fixed`}
+    class="w-full bg-no-repeat bg-gray-700 bg-blend-multiply bg-cover flex flex-col min-h-screen bg-fixed"
 	>
-		<div class="py-20 px-4 mx-auto z-10 w-full max-w-screen-xl lg:py-32">
+		<div class="py-20 px-4 mx-auto flex flex-col gap-5 z-10 w-full max-w-screen-xl lg:py-32">
+      <MovingContainer duration={20000}
+      className="relative bg-gray-50 dark:bg-darkmode-400  dark:border-darkmode-300 p-8 md:p-12">
 			<div
-				class="bg-gray-50 dark:bg-darkmode-400 border border-darkmode-200 dark:border-darkmode-300 rounded p-8 md:p-12 mb-8"
+				class="bg-gray-50 dark:bg-darkmode-400  dark:border-darkmode-300"
 			>
 				<a
 					href="/courses?category=tutorials"
@@ -61,10 +64,10 @@
 						/>
 					</svg>
 				</a>
-			</div>
-			<div class="grid md:grid-cols-2 gap-8">
-				<div
-					class="bg-gray-50 dark:bg-darkmode-400 border border-darkmode-200 dark:border-darkmode-300 rounded p-8 md:p-12"
+      </MovingContainer>
+  <div class="grid md:grid-cols-2 gap-8">
+				<MovingContainer duration={30000}
+					className="relative dark:bg-darkmode-400 dark:border-darkmode-300 rounded p-8 md:p-12"
 				>
 					<a
 						href="/courses?category=design"
@@ -110,9 +113,9 @@
 							/>
 						</svg>
 					</a>
-				</div>
-				<div
-					class="bg-gray-50 dark:bg-darkmode-400 border border-darkmode-200 dark:border-darkmode-300 rounded p-8 md:p-12"
+        </MovingContainer>
+        <MovingContainer duration={25000}
+					className="relative bg-gray-50 dark:bg-darkmode-400 h-full p-8 md:p-12"
 				>
 					<a
 						href="/courses?category=code"
@@ -161,8 +164,8 @@
 							/>
 						</svg>
 					</a>
-				</div>
-			</div>
+      </MovingContainer>
+      </div>
 		</div>
 	</section>
 	<VideoSection
